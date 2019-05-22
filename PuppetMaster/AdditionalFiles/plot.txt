@@ -1,0 +1,10 @@
+StartServer S1 tcp://localhost:11000/PCS tcp://localhost:20001/Server 200 1
+StartServer S2 tcp://localhost:11000/PCS tcp://localhost:20002/Server 200 1
+Wait 3000
+StartClient C1 tcp://localhost:11000/PCS tcp://localhost:10001/Client 200 3
+Wait 3000
+InjectDelay C1 S1
+Wait 3000
+LocalState C1 1
+LocalState S1 1
+LocalState S2 1
