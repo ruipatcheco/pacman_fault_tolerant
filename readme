@@ -1,3 +1,8 @@
+Project made for the Development of Distributed Applications Course
+
+This project aims at implementing a simplified (and therefore far from complete) fault-tolerant real-time distributed PacMan gaming platform.
+
+
 Quick Start Guide
 
 go to the root folder of the project
